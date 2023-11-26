@@ -1,0 +1,110 @@
+/* Styles for your Academia component */
+
+/* Container styles */
+div {
+    margin: 20px;
+  }
+  
+  /* Header styles */
+  h1, h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Centering styles */
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 100% of the viewport height */
+  }
+  
+  /* Label styles */
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  /* Select styles */
+  select {
+    text-align-last: center; /* Center the text in the select box */
+    padding: 8px;
+    font-size: 16px;
+    margin: 0 auto; /* Center the select box using margin */
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Table header styles */
+  th {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Table cell styles */
+  td {
+    border: 1px solid #dddddd;
+    padding: 15px;
+  }
+  
+  /* Alternating row background color */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect on rows */
+  tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Button styles */
+  button {
+    text-align: center;
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Link styles */
+  button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Additional styling for button if needed */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    th, td {
+      padding: 12px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    /* Hide some columns for smaller screens if needed */
+    /* For example, hide the last two columns */
+    td:nth-last-child(-n+2), th:nth-last-child(-n+2) {
+      display: none;
+    }
+  
+    /* Center the label and select for smaller screens */
+    label, select {
+      text-align: center;
+      margin: 10px 0; /* Add margin for spacing */
+    }
+  }
+  
